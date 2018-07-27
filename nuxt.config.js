@@ -12,14 +12,23 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,400' },
-      { rel: 'script', href:'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Inconsolata:400,700|Open+Sans:300,400' }
     ]
   },
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  /*
+  ** Netlify CMS
+  */
+  modules: [
+    // Simple usage
+    "nuxt-netlify-cms",
+ 
+    // With options
+    ["nuxt-netlify-cms", { adminPath: "secure" }],
+  ],
   /*
   ** Build configuration
   */
