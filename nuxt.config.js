@@ -19,16 +19,7 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  /*
-  ** Netlify CMS
-  */
-  modules: [
-    // Simple usage
-    "nuxt-netlify-cms",
- 
-    // With options
-    ["nuxt-netlify-cms", { adminPath: "secure" }],
-  ],
+  
   /*
   ** Build configuration
   */
